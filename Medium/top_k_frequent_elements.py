@@ -9,7 +9,7 @@ class Solution():
     def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         if (len(nums) < 2):
             return nums
-        map = {}  # a dictionary that uses each unique key and maps the key to the count of occurances in the nums list
+        map = {}  # a dictionary that uses each unique key and maps the key to the count of occurences in the nums list
         count = 0  # keeps track of the current count of the element we are currently counting
         i = 0
         top = []  # used to store k number of the highest frequently occuring elements
