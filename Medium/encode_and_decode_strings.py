@@ -1,6 +1,5 @@
 class Solution:
     def encode(self, strs: list[str]) -> str:
-        sol = Solution()
         i = 0  # used as a counter to determine when we have reached the last element of the list
         encoded_string = ""
         if (len(strs) == 0):
