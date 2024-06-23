@@ -1,8 +1,5 @@
 class Solution:
-    """
-    Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings.
-    """
-
+    """Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings."""
     def encode(self, strs: list[str]) -> str:
         i = 0  # used as a counter to determine when we have reached the last element of the list
         encoded_string = ""
