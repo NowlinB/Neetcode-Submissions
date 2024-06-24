@@ -14,9 +14,9 @@ count1 = {"1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0
 class Solution:
     def isValidSudoku(self, board: list[list[str]]) -> bool:
         sol = Solution()
-        rowsResult = sol.checkRows(board)
-        columnResult = sol.checkColumns(board)
-        subBoxResult = sol.checkSubBox(board)
+        rowsResult = sol.checkRows(board) #returns True if each row is unique and does not contain duplicates
+        columnResult = sol.checkColumns(board) # returns True if each column does not contain duplicates
+        subBoxResult = sol.checkSubBox(board) #returns True if all the values in a given 3x3 subbox have no duplicates
         if rowsResult and columnResult and subBoxResult:
             return True
         else:
