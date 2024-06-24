@@ -13,7 +13,7 @@ class Solution:
             j = 0
             product = 1
             while j < len(nums):
-                if j != i:
+                if j != i: #prevent multiply the product of nums[i]
                     product *= nums[j]
                 j += 1
             i += 1
