@@ -24,6 +24,6 @@ class Solution:
 
 
 sol = Solution()
-s = "0P"
+s = "Was it a car or a cat I saw?"
 test = sol.isPalindrome(s)
 print(test)
