@@ -7,9 +7,9 @@ A palindrome is a string that reads the same forward and backward. It is also ca
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        formatString = ""
+        formatString = "" #used to store the formatted string with no spaces, no punctuation, and no numbers
         stringAsList = s.lower().split()
-        formatWithNums = ""
+        formatWithNums = "" #used to store the formatted string with no spaces, and no punctuation
         for each in stringAsList:
             for c in each:
                 if c.isalpha():
