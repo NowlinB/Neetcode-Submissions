@@ -12,16 +12,16 @@ Your solution must use O(1) additional space.
 class Solution:
     def twoSum(self, numbers: list[int], target: int) -> list[int]:
         i, j = 0, 0
-        result = []
+        result = [] 
         while i < len(numbers):
             j = 0
             while j < len(numbers):
                 if numbers[i] + numbers[j] == target:
-                    result = [i + 1, j + 1]
+                    result = [i + 1, j + 1] #return the indexes of where the sum is found +1 (indexes starting from 1 and not 0)
                     return result
                 j += 1
             i += 1
-        return result
+        return result #return an empty list if there is not a sum equal to the target
 
 
 sol = Solution()
