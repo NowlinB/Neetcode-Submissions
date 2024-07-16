@@ -17,7 +17,7 @@ class Solution:
         i = 0
         while i < j:
             left = height[i]
-            l_max = max(l_max, left)  # if left > l_max then left = l_max
+            l_max = max(l_max, left)  # if left > l_max then l_max = left
             right = height[j]
             r_max = max(r_max, right)  # if right > r_max then r_max = right
             if left < l_max:
