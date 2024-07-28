@@ -15,7 +15,7 @@ RIGHT = [")", "]", "}"]
 
 
 class Solution:
-    def isValid(self, s: str):
+    def isValid(self, s: str) -> bool:
         if (
             len(s) == 0 or len(s) == 1 or len(s) % 2 != 0
         ):  # given the conditions a valid length is a length > 2 and that is even
